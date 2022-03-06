@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weather Web App</title>
+    <link rel="stylesheet" href="Web Font/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="widget">
+            <div class="search-textbox">
+                <input id="inputAddress" type="text" placeholder="Nhập địa chỉ..." class="form-control">
+                <button id="btnSubmit" onclick="main()">
+                    <span class="lnr lnr-magnifier"></span>
+                </button>
+            </div>
+            <div class="details">
+                <div class="temperature">20°</div>
+                <div class="summary">
+                    <p class="summaryText">Mostly Cloudy</p>
+                </div>
+                <div class="precipitation">Precipitation: 20%</div>
+                <div class="wind">Wind: 3 mph</div>
+            </div>
+            <div class="pictoBackdrop"></div>
+            <div class="pictoFrame"></div>
+            <div class="pictoCloudBig"></div>
+            <div class="pictoCloudFill"></div>
+            <div class="pictoCloudSmall"></div>
+            <!--
+            <div class="iconCloudBig"></div>
+            <div class="iconCloudFill"></div>
+            <div class="iconCloudSmall"></div>
+            -->
+        </div>
+        <button onclick="myFunction()">
+            click   
+        </button>
+    </div>
+    <script
+        src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Promise,Symbol,Object.setPrototypeOf,Object.getOwnPropertySymbols,Set,Math.trunc,BigInt,Map,Reflect,WeakMap,WeakRef,WeakSet,BigInt,Map,Reflect,WeakMap,WeakRef,WeakSet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/superagent"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
